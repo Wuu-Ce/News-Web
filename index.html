@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <script src="js/ajax.js"></script>
+    <script src="js/due.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/Edit.css">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.10/lib/index.css" rel="external nofollow" target="_blank"  />
+    <!-- 引入组件 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js" rel="external nofollow" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/vant@2.10/lib/vant.min.js" rel="external nofollow" ></script> 
+</head>
+<body class="base">
+    <div class="main_box">
+        <div class="News_imageBox">
+            <div class="News_image1">
+                <div id="MyUI">
+                    <van-image id="image2"
+                    width="50%"
+                    height="50%"
+                    fit="contain"
+                    radius="5"
+                    round="1"
+                    src="img/p1.jpg" rel="external nofollow"  rel="external nofollow"  rel="external nofollow"  rel="external nofollow"  rel="external nofollow"  rel="external nofollow" 
+                    />
+                </div>
+                <img id="image1"src="img/2e36d362aa7cb3db01426b861e1585d4.jpeg">
+                <div class="News_hotwordShuaXin">
+                    <div class="News_hotwordShuaXin_item1">
+                         <h2 id="img_shuaxin_auto">5</h2><p>秒后切换</p>
+                    </div>
+                    <button onclick="Img_ShuaXin()">刷新</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="News_box">
+            <div class="News_hotwordHeader"><h1>热点新闻</h1></div>
+            <div class="News_hotwordBox" id="News_box"></div>
+            <div class="News_hotwordShuaXin">
+                <div class="News_hotwordShuaXin_item1">
+                     <h2 id="setSecond"></h2><p>分钟后刷新</p>
+                </div>
+                <button onclick="News_Ajax()">刷新</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    News_Ajax();
+    ShuaXin_Auto(5);
+    Img_ShuaXin_Auto(5);
+    var MyUI = new Vue({el: '#MyUI',data: {},methods: {},created() {},})
+</script>
+</html>

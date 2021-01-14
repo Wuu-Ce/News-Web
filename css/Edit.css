@@ -1,0 +1,100 @@
+.base
+{
+    background-color: rgb(239, 255, 255);
+    width: 100%;
+}
+
+.main_box
+{
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+}
+.News_imageBox
+{
+    width:60vw;
+    justify-self: center;
+}
+
+.News_image1
+{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 40vw 40px;
+    place-items: center center;
+}
+.News_imageBox img{
+    width:80%;
+    height: 80%;
+    border: 3px solid #ccc;
+}
+.News_imageBox img:hover
+{
+    border: 1px solid #777;
+}
+
+
+.News_ChangeImg
+{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    place-items: center center;
+}
+.News_box
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px auto 50px;
+    place-items:center start;
+    justify-items: center;
+}
+
+.News_hotwordHeader
+{
+    width:15em;
+    color:rgb(70, 163, 224);
+}
+
+.News_hotwordBox
+{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px auto;
+}
+.News_hotwordBox p
+{
+    font-size: 12px;
+    font-weight:700;
+    color:rgb(48, 117, 180)
+}
+
+.News_hotwordBox p:hover
+{
+    color:rgb(233, 59, 82);
+}
+
+.News_hotwordShuaXin
+{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    place-items: center center;
+}
+
+.News_hotwordShuaXin_item1
+{
+    width: 80px;
+    height: 40px;
+    place-items: center center;
+}
+.News_hotwordShuaXin_item1 h2{
+    display: inline;
+    width:40px;
+    font-size:20px;
+    color:rgb(70, 163, 224);
+}
+
+.News_hotwordShuaXin_item1 p{
+    display: inline;
+    width:40px;
+    font-size:12px;
+    color:rgb(70, 163, 224);
+}
